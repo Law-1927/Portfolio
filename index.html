@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lawrence Maullon is a web developer and aspiring cybersecurity specialist building practical digital systems and security-focused projects."
+    />
+    <title>Lawrence Maullon | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" aria-label="Lawrence Maullon home">LM</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Available for internships & opportunities</p>
+            <h1>Hi, I’m Lawrence Maullon.</h1>
+            <p class="hero-role">Web Developer | Aspiring Cybersecurity Specialist</p>
+            <p class="lead">
+              I build practical web applications and explore how to make digital systems more
+              secure, resilient, and user-friendly.
+            </p>
+            <div class="cta-row">
+              <a href="#projects" class="btn btn-primary">View projects</a>
+              <a href="assets/documents/Lawrence-Maullon-Resume.pdf" class="btn btn-secondary" target="_blank" rel="noreferrer">Download resume</a>
+            </div>
+            <div class="social-row" aria-label="Social links">
+              <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="mailto:lawrence.maullon@gmail.com">Email</a>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Abstract profile artwork">
+            <div class="portrait-card">
+              <div class="portrait-glow"></div>
+              <div class="portrait-content">
+                <div class="badge">Build. Secure. Innovate.</div>
+                <div class="mini-card">
+                  <span class="label">Focus</span>
+                  <strong>Web systems • Security labs • Networking</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container narrow">
+          <p class="section-tag">About</p>
+          <h2>Practical developer with a growing focus on cybersecurity.</h2>
+          <p>
+            I am a Computer Science student and developer building solutions that combine strong
+            user experience with clear logic and maintainable architecture. My work spans web
+            development, database-driven systems, and guided security practice.
+          </p>
+          <p>
+            I enjoy learning how systems work under the hood, whether that means designing a
+            booking workflow, configuring a network lab, or understanding the fundamentals of
+            digital security and Linux-based environments.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" class="section section-alt">
+        <div class="container">
+          <p class="section-tag">Projects</p>
+          <h2>Selected work across web development and security.</h2>
+
+          <div class="filter-controls" aria-label="Project categories">
+            <button class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-btn" data-filter="web" aria-pressed="false">Web Development</button>
+            <button class="filter-btn" data-filter="cyber" aria-pressed="false">Cybersecurity</button>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card" data-category="web">
+              <div class="project-thumb thumb-web-one"></div>
+              <div class="project-body">
+                <span class="project-type">Web Development</span>
+                <h3>Granvia Realty Management Portal</h3>
+                <p>
+                  Internal management portal for payment monitoring, agent accreditation, and record
+                  management using PHP, MySQL, and JavaScript.
+                </p>
+                <ul class="project-meta">
+                  <li>Stack: PHP, MySQL, JavaScript, Bootstrap</li>
+                  <li>Role: Developer</li>
+                  <li>Status: Completed</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="web">
+              <div class="project-thumb thumb-web-two"></div>
+              <div class="project-body">
+                <span class="project-type">Web Development</span>
+                <h3>ALT F4 Booking System</h3>
+                <p>
+                  Booking and records platform for an automotive coating business with service
+                  selection, vehicle details, and staff-facing workflows.
+                </p>
+                <ul class="project-meta">
+                  <li>Stack: HTML, CSS, JavaScript, Supabase</li>
+                  <li>Role: Lead Developer</li>
+                  <li>Status: In Progress</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="cyber">
+              <div class="project-thumb thumb-cyber-one"></div>
+              <div class="project-body">
+                <span class="project-type">Cybersecurity</span>
+                <h3>Cisco Router Configuration Lab</h3>
+                <p>
+                  Cisco Packet Tracer lab covering hostname configuration, interface addressing,
+                  status checks, and connectivity validation.
+                </p>
+                <ul class="project-meta">
+                  <li>Tools: Cisco Packet Tracer, Cisco IOS</li>
+                  <li>Role: Lab Engineer</li>
+                  <li>Status: Completed</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="cyber">
+              <div class="project-thumb thumb-cyber-two"></div>
+              <div class="project-body">
+                <span class="project-type">Cybersecurity</span>
+                <h3>TryHackMe Learning Labs</h3>
+                <p>
+                  A curated learning path focused on Linux fundamentals, security tooling, and
+                  ethical hands-on practice in a controlled environment.
+                </p>
+                <ul class="project-meta">
+                  <li>Tools: TryHackMe, Linux, Kali Linux</li>
+                  <li>Role: Learner</li>
+                  <li>Status: Ongoing</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <p class="section-tag">Skills</p>
+          <h2>Core tools and technologies I work with.</h2>
+          <div class="skills-grid">
+            <article class="skill-card">
+              <h3>Languages & Web</h3>
+              <p>PHP, JavaScript, Python, Java, HTML, CSS</p>
+            </article>
+            <article class="skill-card">
+              <h3>Databases</h3>
+              <p>MySQL, MariaDB, Supabase</p>
+            </article>
+            <article class="skill-card">
+              <h3>Tools & Platforms</h3>
+              <p>Git / GitHub, VS Code, Figma, Linux, Kali Linux</p>
+            </article>
+            <article class="skill-card">
+              <h3>Cybersecurity & Networking</h3>
+              <p>TryHackMe, Hack The Box, Cisco Packet Tracer, networking fundamentals</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section section-alt">
+        <div class="container">
+          <p class="section-tag">Experience</p>
+          <h2>Recent roles and experience highlights.</h2>
+          <div class="timeline">
+            <article class="timeline-item">
+              <span class="time">July – Sept 2026</span>
+              <div>
+                <h3>Granvia Realty — IT Intern</h3>
+                <p>
+                  Worked on an internal management portal focused on payment monitoring, agent
+                  accreditation, database structure, and interface improvements.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <span class="time">2026 – Present</span>
+              <div>
+                <h3>ALT F4 Booking System — Lead Developer</h3>
+                <p>
+                  Designing and building a booking and records platform with database-backed
+                  workflows and a responsive user interface.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <span class="time">2025 – 2026</span>
+              <div>
+                <h3>Kabsuhenyo CARES — Merchandise Committee Head</h3>
+                <p>
+                  Coordinated merchandise operations, supported university events, and helped manage
+                  logistics and member engagement.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="section">
+        <div class="container resume-wrap">
+          <div>
+            <p class="section-tag">Resume</p>
+            <h2>Experienced in building, learning, and iterating.</h2>
+            <p>
+              I am actively developing my portfolio with practical, verifiable projects in both
+              web development and cybersecurity. My focus is on building useful systems and growing
+              my technical foundation with hands-on learning.
+            </p>
+          </div>
+          <div class="resume-panel">
+            <p class="resume-label">Professional profile</p>
+            <h3>Lawrence Maullon</h3>
+            <ul>
+              <li>BS Computer Science</li>
+              <li>Web development and cybersecurity learning</li>
+              <li>Available for internships and junior roles</li>
+            </ul>
+            <a href="assets/documents/Lawrence-Maullon-Resume.pdf" class="btn btn-primary" target="_blank" rel="noreferrer">Open resume</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <p class="section-tag">Contact</p>
+          <h2>Let’s build something useful.</h2>
+        </div>
+        <div class="footer-actions">
+          <a href="mailto:lawrence.maullon@gmail.com" class="btn btn-primary">lawrence.maullon@gmail.com</a>
+          <a href="https://github.com" target="_blank" rel="noreferrer" class="btn btn-secondary">GitHub</a>
+          <a href="https://linkedin.com" target="_blank" rel="noreferrer" class="btn btn-secondary">LinkedIn</a>
+        </div>
+      </div>
+      <div class="container bottom-bar">
+        <p>© <span id="year"></span> Lawrence Maullon • Build. Secure. Innovate.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
